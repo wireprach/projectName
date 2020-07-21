@@ -2,135 +2,87 @@
 	box-sizing: border-box;
 	/* This makes the widths of elements more consistent
 		Full details here https://css-tricks.com/box-sizing/ */
-		padding: 0px;
-		margin: 0px;
-
 }
 
 body{
-	text-align: center;
-	color: white;
-
-}
-
-.wrap{
-	width: 1400px;
-	margin: 0 auto;
-
-}
-
-header{
-	height: 100px;
-	background: indigo;
-	width: 100%;
-	z-index: 12;
-	position: fixed;
-
-}
-
-.logo{
-	width: 15%;
-	float: left;
-	line-height: 100px;
-
-}
-
-.logo a{
-	text-decoration: none;
-	font-size: 20px;
-	font-weight: bolder;
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
 	font-family: sans-serif;
-	color: white;
-	letter-spacing: 5px;
+	background-color: #f4ddb4;
+}
 
+section{
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #f4ddb4;
+}
+
+section p, section h1{
+	max-width: 60%;
+	margin-left: 200px;
+}
+
+.main-header{
+	max-width: 100%;
+	background-color: #50b58d;
+	margin-left: 30px;
+	color: #193248;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.main-header h1{;
+	max-width: 1000px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 37px;
+	letter-spacing: 3px;
+	margin-left: 20%;
+}
+
+.main-header p{
+	max-width: 1000px;
+	font-size: 20px;
+	margin-left: 47%;
+	letter-spacing: 3px;
+
+}
+
+.section-header{
+	background-color: #d04b38;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.section-header h1{
+	font-size: 25px;
+	letter-spacing: 2px;
 }
 
 .nav{
-	width: 48%;
-	float: right;
-	line-height: 100px;
-
+height: 100%;
+width: 175px;
+position: fixed;
+top: 0;
+bottom: 0;
+background-color: #193248;
+overflow-x: hidden;
+padding-top: 10px;
 }
 
-.nav a{
+.nav h3, .nav a{
+	display: block;
+	padding: 10px 20px;
 	text-decoration: none;
-	font-family: sans-serif;
-	letter-spacing: 5px;
-	font-size: 15px;
-	margin: 0 10px;
-	color: white;
-
+	color: #f4ddb4;
+	font-size: 19px;
+	display: : block;
 }
 
 .nav a:hover{
-	color: blue;
-	background-color: yellow;
-}
-
-.web-banner{
-	height: 400px;
-	top: 100px;
-	background: teal;
-	width: 100%;
-	position: relative;
-
-}
-
-.banner{
-	width: 100%
-	top: 100px;
-	background: teal;
-	position: relative;
-
-}
-
-.banner h1{
-	padding-top: 150px;
+	font-size: 22px;
 	font-weight: bold;
-	font-size: 60px;
-	font-family: sans-serif;
-	color: white;
-	position: relative;
-
-}
-
-.banner p, .banner i{
-	font-size: 30px;
-	font-family: sans-serif;
-	letter-spacing: 10px;
-	color: white;
-	position: relative;
-
-}
-
-.category-header{
-	height: 200px;
-	top: 100px;
-	background: orange;
-	width: 100%;
-	position: relative;
-
-}
-
-.info h1{
-	font-weight: bold;
-	font-size: 30px;
-	font-family: sans-serif;
-	letter-spacing: 4px;
-	color: white;
-	position: relative;
-
-}
-
-.info p{
-	top: 0px;
-	margin-bottom: 70px;
-	font-size: 15px;
-	font-family: sans-serif;
-	letter-spacing: 1.5px;
-	color: black;
-	position: relative;
-
+	color: #4d9cbd;
 }
 
 /* Simple grid */
@@ -141,21 +93,27 @@ header{
 
 .g-row img{
 	width: 100%; /*This makes all images in grids to be the size of their cell */
-	border-radius: 20px;
-
 }
 
-.g-30{
-	width: 30%;
+.g-left{
+	width: 23%;
 	float: left;
-	margin-left: 50px;
+	margin-left: 25%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 
+.g-right{
+	width: 23%;
+	float: right;
+	margin-right: 13%;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .show{
 	border: 1px solid blue;
 	padding: 2px;
-
 }
 
 .padded{
