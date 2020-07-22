@@ -5,16 +5,17 @@
 }
 
 body{
-	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	margin: 0px;
 	font-family: sans-serif;
-	background-color: #f4ddb4;
+	background-color: #f4ddb4; /* Egg nogg yellow - A very light yellow that won't distract behind web content */
 }
 
+/* Category section setup */
 section{
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	color: #f4ddb4;
+	color: #f4ddb4; /* Egg nogg yellow - A very light yellow that won't distract behind web content */
 }
 
 section p, section h1{
@@ -22,11 +23,12 @@ section p, section h1{
 	margin-left: 200px;
 }
 
+/* Main header setup*/
 .main-header{
 	max-width: 100%;
-	background-color: #50b58d;
+	background-color: #50b58d; /* Jungle green */
 	margin-left: 30px;
-	color: #193248;
+	color: #193248; /* Prussian blue - A dark blue shade that makes the header title readable against the jungle green */
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -48,8 +50,9 @@ section p, section h1{
 
 }
 
+/* Section header setup */
 .section-header{
-	background-color: #d04b38;
+	background-color: #d04b38; /* Tigerlily red - A muted red that contrasts against the light yellow so that text is readbale */
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -59,13 +62,14 @@ section p, section h1{
 	letter-spacing: 2px;
 }
 
+/* Navigation bar setup */
 .nav{
 height: 100%;
 width: 175px;
 position: fixed;
 top: 0;
 bottom: 0;
-background-color: #193248;
+background-color: #193248; /* Prussian blue - A dark blue shade that contrasts against the light yellow text */
 overflow-x: hidden;
 padding-top: 10px;
 }
@@ -74,7 +78,7 @@ padding-top: 10px;
 	display: block;
 	padding: 10px 20px;
 	text-decoration: none;
-	color: #f4ddb4;
+	color: #f4ddb4; /* Egg nogg yellow - A very light yellow that contrasts against the dark background */
 	font-size: 19px;
 	display: : block;
 }
@@ -82,7 +86,8 @@ padding-top: 10px;
 .nav a:hover{
 	font-size: 22px;
 	font-weight: bold;
-	color: #4d9cbd;
+	color: #4d9cbd; /* Butterfly blue - a medium blue to contrast the dark background and the light yellow
+									text, in order to improve user interaction with the navigation bar */
 }
 
 /* Simple grid */
@@ -92,9 +97,10 @@ padding-top: 10px;
 }
 
 .g-row img{
-	width: 100%; /*This makes all images in grids to be the size of their cell */
+	width: 100%;
 }
 
+/* Left column setup */
 .g-left{
 	width: 23%;
 	float: left;
@@ -103,6 +109,7 @@ padding-top: 10px;
 	padding-bottom: 15px;
 }
 
+/* Right column setup*/
 .g-right{
 	width: 23%;
 	float: right;
@@ -117,5 +124,5 @@ padding-top: 10px;
 }
 
 .padded{
-	padding: 20px; /* I add this to cells to add a little padding*/
+	padding: 20px;
 }
